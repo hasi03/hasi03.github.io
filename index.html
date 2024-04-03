@@ -15,19 +15,25 @@
             .projects-container {
                 display: flex;
                 overflow-x: auto;
-                gap: 10px; /* Adjust the space between project articles */
+                gap: 20px; /* Adjust the space between project articles */
+            }
+            .projects-container article {
+                width: 300px; /* Adjust the width of the articles */
+                height: auto; /* Keep the height auto to maintain aspect ratio */
+                flex: 0 0 auto; /* Prevent articles from shrinking and enable them to stay side by side */
+            }
+            .projects-container img {
+                width: 100%; /* Ensure images scale with the article */
+                height: auto; /* Maintain aspect ratio */
             }
             .projects-container::-webkit-scrollbar {
-                height: 3px;
+                height: 10px;
             }
             .projects-container::-webkit-scrollbar-thumb {
                 background: #888; 
             }
             .projects-container::-webkit-scrollbar-thumb:hover {
                 background: #555; 
-            }
-            article {
-                flex: 0 0 auto; /* Prevent articles from shrinking and enable them to stay side by side */
             }
         </style>
 	</head>
@@ -87,50 +93,4 @@
 									
 									<ul class="feature-icons">
 										<li class="icon solid fa-globe">Reinforcement Learning</li>
-										<li class="icon solid fa-globe">Symbolic Regression</li>
-										<li class="icon solid fa-globe">Neuroevolution</li>
-										<li class="icon solid fa-globe">Genetic Programming</li>
-										<li class="icon solid fa-globe">Granger Causality Analysis</li>
-										<li class="icon solid fa-globe">Natural Language Processing</li>
-									</ul>
-								</div>
-								</section>
-
-						<!-- Three -->
-							<section id="three">
-								<div class="container">
-									<h3>Projects</h3>
-									<p>I have been part of variety of Projects related to data science.</p>
-									<div class="features projects-container">
-										
-										<article>
-											<a href="#" class="image"><img src="images/TNG_3boxes_DM_3840.png" alt="" /></a>
-											<div class="inner">
-												<h4><a href="Project1.html"> Relic Galaxies </a></h4>
-												<p> Looking for relic galaxies in cosmological simulations </p>
-											</div>
-										</article>
-
-										<article>
-											<a href="#" class="image"><img src="images/project2/lossfn2_loss-predictions_epoch100.png" alt="" /></a>
-											<div class="inner">
-												<h4><a href="project2.html"> Time Series Forecast Sunspots </a></h4>
-												<p> Using Machine Learning Algorithms to predict solar activity. </p>
-											</div>
-										</article>
-										
-									</div>
-								</div>
-							</section>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+										<li class="icon solid fa-globe">Symbol
