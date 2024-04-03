@@ -15,25 +15,24 @@
             .projects-container {
                 display: flex;
                 overflow-x: auto;
-                gap: 20px; /* Adjust the space between project articles */
+                gap: 2px; /* Adjust the space between project articles */
             }
-            .projects-container article {
-                width: 300px; /* Adjust the width of the articles */
-                height: auto; /* Keep the height auto to maintain aspect ratio */
-                flex: 0 0 auto; /* Prevent articles from shrinking and enable them to stay side by side */
-            }
-            .projects-container img {
-                width: 100%; /* Ensure images scale with the article */
-                height: auto; /* Maintain aspect ratio */
-            }
+	    .projects-container article {
+		    width: 300px; /* Adjust the width of the articles */
+		    height: auto; /* Keep the height auto to maintain aspect ratio */
+		    flex: 0 0 auto; /* Prevent articles from shrinking and enable them to stay side by side */	
+		}
             .projects-container::-webkit-scrollbar {
-                height: 10px;
+                height: 1px;
             }
             .projects-container::-webkit-scrollbar-thumb {
                 background: #888; 
             }
             .projects-container::-webkit-scrollbar-thumb:hover {
                 background: #555; 
+            }
+            article {
+                flex: 0 0 auto; /* Prevent articles from shrinking and enable them to stay side by side */
             }
         </style>
 	</head>
@@ -100,7 +99,7 @@
 										<li class="icon solid fa-globe">Natural Language Processing</li>
 									</ul>
 								</div>
-							</section>
+								</section>
 
 						<!-- Three -->
 							<section id="three">
