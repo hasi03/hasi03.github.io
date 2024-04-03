@@ -15,7 +15,7 @@
             .projects-container {
                 display: flex;
                 overflow-x: auto;
-                gap: 2px; /* Adjust the space between project articles */
+                gap: 5px; /* Adjust the space between project articles */
             }
 	    .projects-container article {
 		    width: 300px; /* Adjust the width of the articles */
@@ -24,6 +24,10 @@
 		}
             .projects-container::-webkit-scrollbar {
                 height: 1px;
+            }
+	    .projects-container img {
+                width: 100%; /* Ensure images scale with the article */
+                height: auto; /* Maintain aspect ratio */
             }
             .projects-container::-webkit-scrollbar-thumb {
                 background: #888; 
