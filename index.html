@@ -10,34 +10,6 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-        <style>
-            /* Add custom styles for the horizontal scrolling */
-            .projects-container {
-                display: flex;
-                overflow-x: auto;
-                gap: 5px; /* Adjust the space between project articles */
-            }
-	    .projects-container article {
-		    width: 300px; /* Adjust the width of the articles */
-		    height: auto; /* Keep the height auto to maintain aspect ratio */
-		    flex: 0 0 auto; /* Prevent articles from shrinking and enable them to stay side by side */	
-		}
-            .projects-container::-webkit-scrollbar {
-                height: 5px;
-            }
-	    .projects-container::-webkit-scrollbar {
-                height: 10px;
-	    }
-            .projects-container::-webkit-scrollbar-thumb {
-                background: #888; 
-            }
-            .projects-container::-webkit-scrollbar-thumb:hover {
-                background: #555; 
-            }
-            article {
-                flex: 0 0 auto; /* Prevent articles from shrinking and enable them to stay side by side */
-            }
-        </style>
 	</head>
 	<body class="is-preload">
 
@@ -62,7 +34,7 @@
 						<li><a href="https://www.facebook.com/hasitha.eranda.3" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 						<li><a href="https://www.instagram.com/hasi_traveler/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 						<li><a href="https://github.com/hasi03" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="mailto:pkheranda@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="pkheranda@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 				</footer>
 			</section>
@@ -102,34 +74,90 @@
 										<li class="icon solid fa-globe">Natural Language Processing</li>
 									</ul>
 								</div>
-								</section>
+							</section>
 
 						<!-- Three -->
-							<section id="three">
-								<div class="container">
-									<h3>Projects</h3>
-									<p>I have been part of variety of Projects related to data science.</p>
-									<div class="features projects-container">
-										
-										<article>
-											<a href="#" class="image"><img src="images/TNG_3boxes_DM_3840.png" alt="" /></a>
-											<div class="inner">
-												<h4><a href="Project1.html"> Relic Galaxies </a></h4>
-												<p> Looking for relic galaxies in cosmological simulations </p>
-											</div>
-										</article>
+                        <section id="three">
+                            <div class="container">
+                                <h3>Projects</h3>
 
-										<article>
-											<a href="#" class="image"><img src="images/project2/lossfn2_loss-predictions_epoch100.png" alt="" /></a>
-											<div class="inner">
-												<h4><a href="project2.html"> Time Series Forecast Sunspots </a></h4>
-												<p> Using Machine Learning Algorithms to predict solar activity. </p>
-											</div>
-										</article>
-										
-									</div>
-								</div>
-							</section>
+                                <div class="slideshow">
+                                    <article>
+                                        <a href="Project1.html" class="image"><img src="images/TNG_3boxes_DM_3840.png" alt="" /></a>
+                                        <div class="inner">
+                                            <h4><a href="Project1.html">Relic Galaxies</a></h4>
+                                            <p>Looking for relic galaxies in cosmological simulations</p>
+                                        </div>
+                                    </article>
+
+                                    <article>
+                                        <a href="project2.html" class="image"><img src="images/project2/lossfn2_loss-predictions_epoch100.png" alt="" /></a>
+                                        <div class="inner">
+                                            <h4><a href="project2.html">Time Series Forecast Sunspots</a></h4>
+                                            <p>Using Machine Learning Algorithms to predict solar activity.</p>
+                                        </div>
+                                    </article>
+
+                                    <article>
+                                        <a href="project3.html" class="image"><img src="images/project3/cloud-cover.png" alt="" /></a>
+                                        <div class="inner">
+                                            <h4><a href="project3.html">Location Optimizer</a></h4>
+                                            <p>Finding the best location to observe the 2024 solar eclipse.</p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </section>
+
+                        <style>
+                            .slideshow {
+                                display: flex;
+                                overflow: hidden;
+                            }
+
+                            .slideshow article {
+                                flex: 0 0 100%;
+                                transition: transform 0.5s ease-in-out;
+                            }
+
+                            .slideshow article:not(:first-child) {
+                                transform: translateX(100%);
+                            }
+
+                            @keyframes slide {
+                                0% {
+                                    transform: translateX(0);
+                                }
+                                20% {
+                                    transform: translateX(0);
+                                }
+                                25% {
+                                    transform: translateX(-100%);
+                                }
+                                45% {
+                                    transform: translateX(-100%);
+                                }
+                                50% {
+                                    transform: translateX(-200%);
+                                }
+                                70% {
+                                    transform: translateX(-200%);
+                                }
+                                75% {
+                                    transform: translateX(-100%);
+                                }
+                                95% {
+                                    transform: translateX(-100%);
+                                }
+                                100% {
+                                    transform: translateX(0);
+                                }
+                            }
+
+                            .slideshow article {
+                                animation: slide 10s infinite;
+                            }
+                        </style>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -139,6 +167,39 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+            
+            <script>
+                // Pause Slideshow Button
+                var slideshowPaused = false;
+                var pauseButton = document.getElementById("pauseButton");
+                pauseButton.addEventListener("click", function() {
+                    if (slideshowPaused) {
+                        slideshowPaused = false;
+                        pauseButton.textContent = "Pause Slideshow";
+                        // Resume slideshow animation
+                        document.querySelector(".slideshow article").style.animationPlayState = "running";
+                    } else {
+                        slideshowPaused = true;
+                        pauseButton.textContent = "Resume Slideshow";
+                        // Pause slideshow animation
+                        document.querySelector(".slideshow article").style.animationPlayState = "paused";
+                    }
+                });
 
+                // Previous Slide Button
+                var prevButton = document.getElementById("prevButton");
+                prevButton.addEventListener("click", function() {
+                    // Move to previous slide
+                    document.querySelector(".slideshow article:first-child").style.transform = "translateX(100%)";
+                });
+
+                // Next Slide Button
+                var nextButton = document.getElementById("nextButton");
+                nextButton.addEventListener("click", function() {
+                    // Move to next slide
+                    document.querySelector(".slideshow article:first-child").style.transform = "translateX(-100%)";
+                });
+            </script>
 	</body>
 </html>
+
