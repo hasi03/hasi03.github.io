@@ -23,10 +23,9 @@
 				</header>
 				<nav id="nav">
 					<ul>
-						<li><a href="#one" class="active">About</a></li>
-                        			<li><a href="#two">Projects</a></li>
+                        <li><a href="#one">My Work in a Nutshell</a></li>
+						<li><a href="#two">Projects</a></li>
 						<li><a href="#three">Interests</a></li>
-						<li><a href="#four">Projects in a Nutshell</a></li>
 					</ul>
 				</nav>
 				<footer>
@@ -51,108 +50,110 @@
 									<img src="images/cover.jpg" alt="" />
 								</div>
 								<div class="container">
-									<header class="major">
-										<h2>My Journey in Data Science</h2>
-										<p> Researcher exploring the vast data of the Cosmos <br />
-										</p>
-									</header>
-									<p>Started my journey in Physics in Sri Lanka and after graduation, I recieved the schollarship for my PhD in Astrophysics at University of California Irvine(UCI).</p>
-								</div>
-							</section>
+                                    <h3> My Work in a Nutshell </h3>
+    
+                                    <div class="slideshow">
+                                        <article>
+                                            <a href="Project1.html" class="image"><img src="images/TNG_3boxes_DM_3840.png" alt="" /></a>
+                                            <div class="inner">
+                                                <h3><a href="Project1.html">Relic Galaxies</a></h3>
+                                                <h4>Looking for relic galaxies in cosmological simulations</h4>
+                                            </div>
+                                        </article>
+    
+                                        <article>
+                                            <a href="project2.html" class="image"><img src="images/project2/lossfn2_loss-predictions_epoch100.png" alt="" /></a>
+                                            <div class="inner">
+                                                <h4><a href="project2.html">Time Series Forecast Sunspots</a></h4>
+                                                <p>Using Machine Learning Algorithms to predict solar activity.</p>
+                                            </div>
+                                        </article>
+    
+                                        <article>
+                                            <a href="project3.html" class="image"><img src="images/project3/cloud-cover.png" alt="" /></a>
+                                            <div class="inner">
+                                                <h4><a href="project3.html">Location Optimizer</a></h4>
+                                                <p>Finding the best location to observe the 2024 solar eclipse.</p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <button id="prevButton">Previous Slide</button>
+    
+                            <style>
+                                .slideshow {
+                                    display: flex;
+                                    overflow: hidden;
+                                }
+    
+                                .slideshow article {
+                                    flex: 0 0 100%;
+                                    transition: transform 0.5s ease-in-out;
+                                }
+    
+                                .slideshow article:not(:first-child) {
+                                    transform: translateX(100%);
+                                }
+    
+                                @keyframes slide {
+                                    0% {
+                                        transform: translateX(0);
+                                    }
+                                    20% {
+                                        transform: translateX(0);
+                                    }
+                                    25% {
+                                        transform: translateX(-100%);
+                                    }
+                                    45% {
+                                        transform: translateX(-100%);
+                                    }
+                                    50% {
+                                        transform: translateX(-200%);
+                                    }
+                                    70% {
+                                        transform: translateX(-200%);
+                                    }
+                                    75% {
+                                        transform: translateX(-100%);
+                                    }
+                                    95% {
+                                        transform: translateX(-100%);
+                                    }
+                                    100% {
+                                        transform: translateX(0);
+                                    }
+                                }
+    
+                                .slideshow article {
+                                    animation: slide 10s infinite;
+                                }
+                    /* Adjust thumbnail size */
+                                .slideshow img {
+                                    max-width: 100%;
+                                    height: auto;
+                                }
+    
+                                /* Reduce font size */
+                                .slideshow article {
+                                    font-size: 12px;
+                                }
+                            </style>
+						    </section>
 
 
 						<!-- Two -->
                         <section id="two">
-                            <div class="container">
-                                <h3>Projects</h3>
+							<h3> Projects </h3> 
+							<p> Short Summary of my projects in Data Science and Analysis. 
+							<i class="fab fa-python"></i>Python <i class="fa-folder fa" style="font-size: 22px;color:#666;"></i> Jupyter </p>
+							<iframe src="https://dash-test2-w6z4tg7mqa-uw.a.run.app/" width="700" height="600"></iframe>
+							<iframe src="pandas_profile.html" width="90%" height="300" style="border:none;"></iframe>
 
-                                <div class="slideshow">
-                                    <article>
-                                        <a href="Project1.html" class="image"><img src="images/TNG_3boxes_DM_3840.png" alt="" /></a>
-                                        <div class="inner">
-                                            <h4><a href="Project1.html">Relic Galaxies</a></h4>
-                                            <p>Looking for relic galaxies in cosmological simulations</p>
-                                        </div>
-                                    </article>
 
-                                    <article>
-                                        <a href="project2.html" class="image"><img src="images/project2/lossfn2_loss-predictions_epoch100.png" alt="" /></a>
-                                        <div class="inner">
-                                            <h4><a href="project2.html">Time Series Forecast Sunspots</a></h4>
-                                            <p>Using Machine Learning Algorithms to predict solar activity.</p>
-                                        </div>
-                                    </article>
-
-                                    <article>
-                                        <a href="project3.html" class="image"><img src="images/project3/cloud-cover.png" alt="" /></a>
-                                        <div class="inner">
-                                            <h4><a href="project3.html">Location Optimizer</a></h4>
-                                            <p>Finding the best location to observe the 2024 solar eclipse.</p>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-                        </section>
-
-                        <style>
-                            .slideshow {
-                                display: flex;
-                                overflow: hidden;
-                            }
-
-                            .slideshow article {
-                                flex: 0 0 100%;
-                                transition: transform 0.5s ease-in-out;
-                            }
-
-                            .slideshow article:not(:first-child) {
-                                transform: translateX(100%);
-                            }
-
-                            @keyframes slide {
-                                0% {
-                                    transform: translateX(0);
-                                }
-                                20% {
-                                    transform: translateX(0);
-                                }
-                                25% {
-                                    transform: translateX(-100%);
-                                }
-                                45% {
-                                    transform: translateX(-100%);
-                                }
-                                50% {
-                                    transform: translateX(-200%);
-                                }
-                                70% {
-                                    transform: translateX(-200%);
-                                }
-                                75% {
-                                    transform: translateX(-100%);
-                                }
-                                95% {
-                                    transform: translateX(-100%);
-                                }
-                                100% {
-                                    transform: translateX(0);
-                                }
-                            }
-
-                            .slideshow article {
-                                animation: slide 10s infinite;
-                            }
-			    /* Adjust thumbnail size */
-                            .slideshow img {
-                                max-width: 100%;
-                                height: auto;
-                            }
-
-                            /* Reduce font size */
-                            .slideshow article {
-                                font-size: 12px;
-                            }
-                        </style>
+					    
+						</section>
+                            
 
                         <!-- Three -->
 							<section id="three">
@@ -170,16 +171,7 @@
 								</div>
 							</section>
 			<!-- Four -->
-						<section id="four">
-							<h1 style="text-decoration: underline;">Projects in a Nutshell</h1> <br />
-							<p> Short Summary of my projects in Data Science and Analysis. 
-							<i class="fab fa-python"></i>Python <i class="fa-folder fa" style="font-size: 22px;color:#666;"></i> Jupyter </p>
-							<iframe src="https://dash-test2-w6z4tg7mqa-uw.a.run.app/" width="700" height="600"></iframe>
-							<iframe src="pandas_profile.html" width="90%" height="300" style="border:none;"></iframe>
-
-
-					    
-						</section>
+						
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
