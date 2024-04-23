@@ -37,116 +37,20 @@ We apply numerous ML algorithms to predict whether a patient will be readmitted 
 <figure class="wp-block-image size-large"><img src="images/research_proj1/galaxy_merger.png" alt="" class="wp-image-44"/><figcaption class="wp-element-caption">Synthetic images of two galaxies merging in the simulation TNG100-1. Image is taken from <a href="https://academic.oup.com/mnras/article/494/4/4969/5818768">https://academic.oup.com/mnras/article/494/4/4969/5818768</a></figcaption></figure>
 <!-- /wp:image -->
 
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>But looking for these relics are extremely hard due to observational limitations and also since they are theoretically predicted to be rare. With the latest development of cosmological simulations, there is an opportunity to look for these relics. Since we only have discovered very few relics  through telescopes, there are a lot of uncharted territories for defining and feature engineering classifiers to identify relics . </p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>So we explore and analyze data from multiple Illustris simulations to look for new features common to relics and how they are different from other galaxies. Especially how does dark matter profiles and properties are related to these relics. Do relic galaxies have high concentration dark matter halos around them? etc.</p>
-<!-- /wp:paragraph -->
 
 <!-- wp:heading -->
 <h2 class="wp-block-heading">Tools/Packages</h2>
 <!-- /wp:heading -->
 
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Programming<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Python : Pandas, Numpy, Seaborn, Scikit-learn, Keras</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>SQL</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Bash : Linux</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Data<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>TNG Illustris 300-1 : Over 10TB data</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Illustris-1 : Over 4TB data</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Magneticum : Over 1TB data</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Tools<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>High Performance Computing (HPC):  HPC3 community computing cluster at University of California Irvine</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
 <!-- wp:heading -->
-<h2 class="wp-block-heading">Challenges</h2>
+<h2 class="wp-block-heading">Feature Engineering</h2>
 <!-- /wp:heading -->
 
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Data Storage:<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Having to work with a 5TB storage in CRSP (a multi-Petabyte storage cluster at UCI). I implemented bash scripts to automate download some file batches and after analysis is done delete automatically. </li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
-<!-- /wp:list-item -->
 
-<!-- wp:list-item -->
-<li>Computational power:<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Having to work with limited number of hours allocated in HPC3. I optimized the codes in Python by using parallel processing and running on the cluster.</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Comparing with Observations and other studies:<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:heading -->
-<h2 class="wp-block-heading">Results</h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-<p>There are two papers soon to be published discussing the new results. Some of the results concisely</p>
-<!-- /wp:paragraph -->
 
 <!-- wp:image {"id":46,"width":770,"height":765,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large is-resized"><img src="images/research_proj1/M100dm_M30kpc-evolution.png" alt="" class="wp-image-46" width="770" height="765"/><figcaption class="wp-element-caption">This plot shows how galaxies(in the simulation) change their stellar mass and dark matter mass(within 100 kpc radius from the center) in the last 10 billion years. y-axis shows stellar mass ratio at redshift 2(z=2) to redshift 1(z=0). x-axis shows same ratio for dark matter.</figcaption></figure>
+<figure class="wp-block-image size-large is-resized"><img src="images/project-healthcare/rf-permutations-features.png" alt="" class="wp-image-46" width="770" height="765"/><figcaption class="wp-element-caption">Permutation feature importance.</figcaption></figure>
 <!-- /wp:image -->
 
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":47,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large is-resized"><img src="images/research_proj1/contour_plot-m*-mdm100-c200.png" alt="" class="wp-image-47" width="770" height="765"/><figcaption class="wp-element-caption">This plot shows how high dark matter concentrated galaxies can be candidates for relic galaxies. Color bar shows the values of dark matter concentration (c200). It looks high concentrated dark matter galaxies tend to have not changed their dark matter and stellar masses but need a bigger sample size</figcaption></figure>
-<!-- /wp:image -->
-
-<!-- wp:paragraph -->
-<p> </p>
-<!-- /wp:paragraph -->
 	
 </html>
