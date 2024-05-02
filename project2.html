@@ -9,6 +9,27 @@
         ul {list-style-type: none;}
         li {margin-bottom: 10px;}
     </style>
+
+    <style>
+			figure {
+			       margin: 20px 0;
+			       text-align: center;
+				}
+			figcaption {
+			    color: #555;
+			    font-style: italic;
+			    margin-top: 8px;
+			        }
+	</style>
+
+    <style>
+			.resized-image {
+	    			width: 100%;   /* or any fixed width, like 500px */
+	    			max-width: 500px; /* prevents the image from becoming too large */
+	    			height: auto; /* maintains the aspect ratio */
+				}
+	</style>
+    
 </head>
 <body>
 
@@ -49,6 +70,8 @@
         The comparative analysis revealed that while each model brought unique strengths to the forecasting task,
         the LSTM model demonstrated a superior balance of accuracy and efficiency. Detailed results and model
         comparisons are presented, showcasing the predictive capabilities and potential areas for improvement.
+
+        
     </p>
     
 </section>
@@ -60,6 +83,12 @@
         of astrophysics by providing reliable forecasting tools. These insights can help mitigate the adverse effects
         of solar phenomena on modern technology and society.
     </p>
+
+    <figure>
+		<img src="images/solar-activity/prophet-prediction.png" alt="Feature Importance Visual" class="resized-image" />
+		<figcaption>Comparison of Prediction by meta Prophet vs actual sunspots data</figcaption>
+	</figure>
+
     
 </section>
 
