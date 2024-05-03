@@ -8,115 +8,98 @@
         h2 {color: #333;}
         ul {list-style-type: none;}
         li {margin-bottom: 10px;}
+        figure {
+            margin: 20px 0;
+            text-align: center;
+        }
+        figcaption {
+            color: #555;
+            font-style: italic;
+            margin-top: 8px;
+        }
+        .resized-image {
+            width: 100%;   /* or any fixed width, like 500px */
+            max-width: 500px; /* prevents the image from becoming too large */
+            height: auto; /* maintains the aspect ratio */
+        }
     </style>
-
-    <style>
-			figure {
-			       margin: 20px 0;
-			       text-align: center;
-				}
-			figcaption {
-			    color: #555;
-			    font-style: italic;
-			    margin-top: 8px;
-			        }
-	</style>
-
-    <style>
-			.resized-image {
-	    			width: 100%;   /* or any fixed width, like 500px */
-	    			max-width: 500px; /* prevents the image from becoming too large */
-	    			height: auto; /* maintains the aspect ratio */
-				}
-	</style>
-
-	
-    
 </head>
 <body>
 
 <h1>Time Series Forecast on Sunspot Activity</h1>
 
-<section>
-    <h2>Motivation</h2>
+<!-- Table of Contents -->
+<h2>Table of Contents</h2>
+<ul>
+    <li><a href="#motivation">Motivation</a></li>
+    <li><a href="#data">Data</a></li>
+    <li><a href="#method">Method</a></li>
+    <li><a href="#results">Results</a></li>
+    <li><a href="#impact">Impact</a></li>
+</ul>
+
+<section id="motivation">
+    <h2><u>Motivation</u></h2>
     <p>
         This project was inspired by the fascinating patterns observed in the sunspot activity recorded over centuries.
         Sunspots, which are regions on the Sun's surface that appear darker due to lower temperatures, have been closely
         linked to solar phenomena that can have significant impacts on earth. Understanding and forecasting these activities
         can aid in preparing for solar events that affect satellite communications, weather patterns, and even power grids.
     </p>
-    
 </section>
 
-<section>
+<section id="data">
     <h2>Data</h2>
-    
     <iframe src="pandas_profile.html" width="80%" height="400" style="border:none;"></iframe>
-   
-    
 </section>
 
-<section>
-    <h2>Method</h2>
+<section id="method">
+    <h2><u>Method</u></h2>
     <p>
         The project employs a comparative approach, utilizing various machine learning and deep learning techniques
         to forecast sunspot activity. Each model, including GNN, LSTM, RNN, and XGBoost, was trained on historical
         sunspot data, evaluated for accuracy, and fine-tuned for optimal performance.
-    
-    <h3>Tools Applied</h3>
-	Algorithms applied for forecasting.
     </p>
-	
-   <iframe src="images/solar-activity/algorithms-pie-chart.html" width="80%" height="400"></iframe>
-
-   <p> Python packages used for the project.
-   </p>
-   <iframe src="images/solar-activity/packages-pie-chart.html" width="80%" height="400"></iframe>
-
-   <h3> Explanatory Data Analysis (EDA) </h3>
-    <p> You can find the code on the jupyter notebook "Data Analysis.ipynb". Before we start training our models, let's explore the data and understand the patterns in sunspot activity.
-        Not only that, we need to clean the data by,
-
-    <ul>
-        <li>Missing Values</li>
-        <li>Seasonality</li>
-        <li>Trend and Residual</li>
-    </ul>
-
-
-
-    
+    <h3>Tools Applied</h3>
+    Algorithms applied for forecasting.
+    <iframe src="images/solar-activity/algorithms-pie-chart.html" width="80%" height="400"></iframe>
+    <p> Python packages used for the project.</p>
+    <iframe src="images/solar-activity/packages-pie-chart.html" width="80%" height="400"></iframe>
+    <h3>Explanatory Data Analysis (EDA)</h3>
+    <p>Before we start training our models, let's explore the data and understand the patterns in sunspot activity.
+        We need to clean the data by:
+        <ul style="list-style-type: disc;">
+            <li>Missing Values</li>
+            <li>Seasonality</li>
+            <li>Trend and Residual</li>
+        </ul>
+    </p>
 </section>
 
-<section>
-    <h2>Results</h2>
+<section id="results">
+    <h2><u>Results</u></h2>
     <p>
         The comparative analysis revealed that while each model brought unique strengths to the forecasting task,
         the LSTM model demonstrated a superior balance of accuracy and efficiency. Detailed results and model
         comparisons are presented, showcasing the predictive capabilities and potential areas for improvement.
-
-        
     </p>
-
     <h3>Model Comparison</h3>
     Let's compare the models based on their performance metrics.
-    
+    <h3>Hyper-tuning</h3>
+    Let's compare the models based on their hyper-tuning.
 </section>
 
-<section>
-    <h2>Impact</h2>
+<section id="impact">
+    <h2><u>Impact</u></h2>
     <p>
         This project not only enhances our understanding of sunspot cycles but also contributes to the broader field
         of astrophysics by providing reliable forecasting tools. These insights can help mitigate the adverse effects
         of solar phenomena on modern technology and society.
     </p>
-
     <figure>
-		<img src="images/solar-activity/prophet-prediction.png" alt="Feature Importance Visual" class="resized-image" />
-		<figcaption>Comparison of Prediction by meta Prophet vs actual sunspots data</figcaption>
-	</figure>
-
-    
+        <img src="images/solar-activity/prophet-prediction.png" alt="Feature Importance Visual" class="resized-image" />
+        <figcaption>Comparison of Prediction by meta Prophet vs actual sunspots data</figcaption>
+    </figure>
 </section>
 
 </body>
