@@ -29,6 +29,8 @@
 	    			height: auto; /* maintains the aspect ratio */
 				}
 	</style>
+
+	
     
 </head>
 <body>
@@ -44,13 +46,12 @@
         can aid in preparing for solar events that affect satellite communications, weather patterns, and even power grids.
     </p>
     
-    <iframe src="images/solar-activity/algorithms-pie-chart.html" width="80%" height="400"></iframe>
 </section>
 
 <section>
     <h2>Data</h2>
     
-    <iframe src="pandas_profile.html" width="100%" height="600" style="border:none;"></iframe>
+    <iframe src="pandas_profile.html" width="80%" height="400" style="border:none;"></iframe>
    
     
 </section>
@@ -61,7 +62,29 @@
         The project employs a comparative approach, utilizing various machine learning and deep learning techniques
         to forecast sunspot activity. Each model, including GNN, LSTM, RNN, and XGBoost, was trained on historical
         sunspot data, evaluated for accuracy, and fine-tuned for optimal performance.
+    
+    <h3>Tools Applied</h3>
+	Algorithms applied for forecasting.
     </p>
+	
+   <iframe src="images/solar-activity/algorithms-pie-chart.html" width="80%" height="400"></iframe>
+
+   <p> Python packages used for the project.
+   </p>
+   <iframe src="images/solar-activity/packages-pie-chart.html" width="80%" height="400"></iframe>
+
+   <h3> Explanatory Data Analysis (EDA) </h3>
+    <p> You can find the code on the jupyter notebook "Data Analysis.ipynb". Before we start training our models, let's explore the data and understand the patterns in sunspot activity.
+        Not only that, we need to clean the data by,
+
+    <ul>
+        <li>Missing Values</li>
+        <li>Seasonality</li>
+        <li>Trend and Residual</li>
+    </ul>
+
+
+
     
 </section>
 
@@ -74,6 +97,9 @@
 
         
     </p>
+
+    <h3>Model Comparison</h3>
+    Let's compare the models based on their performance metrics.
     
 </section>
 
