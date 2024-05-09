@@ -23,10 +23,41 @@
             height: auto; /* maintains the aspect ratio */
         }
     </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Keywords</title>
+    <style>
+        .keywords {
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .keyword {
+            display: inline-block;
+            margin: 5px;
+            padding: 8px 16px;
+            background-color: #ff0;
+            border-radius: 25px; /* Gives the oval shape */
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: adds some depth */
+        }
+    </style>
+    
 </head>
 <body>
 
 <h1>Time Series Forecast on Sunspot Activity</h1>
+
+<div class="keywords">
+    <span class="keyword">Machine Learning</span>
+    <span class="keyword">Time Series Forecast</span>
+    <span class="keyword">Graph Neural Networks</span>
+    <span class="keyword">XGBoost Regression</span>
+    <span class="keyword">Predictive Modeling</span>
+</div>
 
 <!-- Table of Contents -->
 <h2>Table of Contents</h2>
@@ -61,10 +92,14 @@
         sunspot data, evaluated for accuracy, and fine-tuned for optimal performance.
     </p>
     <h3>Tools Applied</h3>
-    Algorithms applied for forecasting.
+    
     <iframe src="images/solar-activity/algorithms-pie-chart.html" width="80%" height="400"></iframe>
-    <p> Python packages used for the project.</p>
+    <figcaption> Algorithms used in the project. </figcaption>
+  
     <iframe src="images/solar-activity/packages-pie-chart.html" width="80%" height="400"></iframe>
+    <figcaption> Python packages used in the project. </figcaption>
+
+    
     <h3>Explanatory Data Analysis (EDA)</h3>
     <p>Before we start training our models, let's explore the data and understand the patterns in sunspot activity.
         We need to clean the data by:
