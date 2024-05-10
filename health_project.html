@@ -1,54 +1,113 @@
 <!DOCTYPE html>
 <html>
 
-  <!-- wp:heading -->
-<h2 class="wp-block-heading">Advanced Machine Learning for Predicting Hospital Readmissions in Diabetes Care</h2>
-<!-- /wp:heading -->
+<head>
+    <title>Advanced Machine Learning for Predicting Hospital Readmissions in Diabetes Care</title>
+    <meta charset="utf-8">
+    <style>
+        body {font-family: Arial, sans-serif; margin: 40px;}
+        h2 {color: #333;}
+        ul {list-style-type: none;}
+        li {margin-bottom: 10px;}
+        figure {
+            margin: 20px 0;
+            text-align: center;
+        }
+        figcaption {
+            color: #555;
+            font-style: italic;
+            margin-top: 8px;
+        }
+        .resized-image {
+            width: 100%;   /* or any fixed width, like 500px */
+            max-width: 500px; /* prevents the image from becoming too large */
+            height: auto; /* maintains the aspect ratio */
+        }
+    </style>
 
-  
-<!-- wp:paragraph -->
-We apply numerous ML algorithms to predict whether a patient will be readmitted to the hospital (within or after 30 days of discharge).
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Keywords</title>
+    <style>
+        .keywords {
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .keyword {
+            display: inline-block;
+            margin: 5px;
+            padding: 8px 16px;
+            background-color: #ff0;
+            border-radius: 25px; /* Gives the oval shape */
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: adds some depth */
+        }
+    </style>
+    
+</head>
+<body>
 
-  <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>XGBoost</li>
-<!-- /wp:list-item -->
+<h1>Advanced Machine Learning for Predicting Hospital Readmissions in Diabetes Care</h1>
 
-  <!-- wp:list-item -->
-<li>Deep Neural Networks</li>
-<!-- /wp:list-item --></ul>
+<div class="keywords">
+    <span class="keyword">Machine Learning</span>
+    <span class="keyword">Random Forest</span>
+    <span class="keyword">Decision Trees</span>
+    <span class="keyword">Deep Learning</span>
+    <span class="keyword">Logistic Regression</span>
+</div>
 
-  <!-- wp:list-item -->
-<li>Random Forest</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
+	<!-- Table of Contents -->
+<h2>Table of Contents</h2>
+<ul>
+    <li><a href="#motivation">Motivation</a></li>
+    <li><a href="#EDA">Exploratory Data Analysis</a></li>
+    <li><a href="#FE">Feature Engineering</a></li>
+    <li><a href="#results">Results</a></li>
+    <li><a href="#impact">Impact</a></li>
+</ul>
+	
+<section id="motivation">
+	<h2><u>Motivation</u></h2>
+	<p> We apply numerous ML algorithms to predict whether a patient will be readmitted to the hospital (within or after 30 days of discharge).		
+	</p>
+</section>
+	
 
-<iframe src="images/project-healthcare/pie-chart.html" class="iframe-responsive" style="width: 100%; border: none;" height="500"></iframe>
+<section id="EDA">
+	<h2><u>Exploratory Data Analysis</u></h2>
+
+	<iframe src="images/project-healthcare/pie-chart.html" width="80%" height="400"></iframe>
+	<figcaption> Python packages used in the project. </figcaption>	
+
+	<iframe src="https://dash-test2-w6z4tg7mqa-uw.a.run.app/" width="80%" height="400"></iframe>
+	<figcaption> Dash Board visualizing the raw data. </figcaption>	
+</section>
+
+
+<section id="FE">
+	<h2><u>Feature Engineering</u></h2>
+
+	<iframe src="images/project-healthcare/pie-chart.html" class="iframe-responsive" style="width: 100%; border: none;" height="500"></iframe>
+	<figcaption> Python packages used in the project. </figcaption>	
+</section>
+	
+
+<section id="results">
+	<h2><u>Results</u></h2>
+	
+	<img src="images/project-healthcare/rf-permutations-features.png" alt="" class="resized-image" />
+	<figcaption> Permutation feature importance. </figcaption>	
+</section>
 
 	
-<!-- /wp:paragraph -->
-
-<!-- wp:heading -->
-<h2 class="wp-block-heading">Data</h2>
-<!-- /wp:heading -->
-
-<iframe src="https://dash-test2-w6z4tg7mqa-uw.a.run.app/" class="iframe-responsive" style="width: 100%; border: none;" height="500"></iframe>
-
-
-
-<!-- wp:heading -->
-<h2 class="wp-block-heading">Tools/Packages</h2>
-<!-- /wp:heading -->
-
-<!-- wp:heading -->
-<h2 class="wp-block-heading">Feature Engineering</h2>
-<!-- /wp:heading -->
-
-
-
-<!-- wp:image {"id":46,"width":770,"height":765,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large is-resized"><img src="images/project-healthcare/rf-permutations-features.png" alt="" class="wp-image-46" width="770" height="765"/><figcaption class="wp-element-caption">Permutation feature importance.</figcaption></figure>
-<!-- /wp:image -->
+<section id="impact">
+	<h2><u>Impact</u></h2>
+</section>
 
 	
+</body>
 </html>
