@@ -49,6 +49,22 @@
 			        }
 	        </style>
 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	        <title>Side by Side Iframes</title>
+	    	<style>
+			.container {
+			    display: flex;  /* Enables flexbox layout */
+			    justify-content: space-around; /* Centers the iframes and provides space around them */
+			    align-items: center; /* Aligns items vertically in the center */
+			    height: 100vh; /* Optional: takes full height of the viewport */
+			}
+			iframe {
+			    width: 48%; /* Each iframe takes slightly less than half of the container width */
+			    height: 80%; /* Adjust height as needed */
+			    border: 2px solid black; /* Adds a border around each iframe */
+			}
+	    	</style>
+
 	</head>
 	<body class="is-preload">
 
@@ -94,13 +110,12 @@
 								<div class="container">
                                     <h3> My Work in a Nutshell </h3>
 									
-				    <iframe src="experience-skills.html" width="80%" height="400"></iframe>
-                                    <figcaption> Algorithms used in the project. </figcaption>
-				
-				    Used Python packages : Overall  	
-				    <iframe src="piechart.html" width="80%" height="400"></iframe>
-				    <figcaption> Algorithms used in the project. </figcaption>
-	
+				<div class="container">
+			        	<iframe src="experience-skills.html" width="80%" height="400"></iframe>
+                                    	<figcaption> My Experience </figcaption>
+			        	<iframe src="piechart.html" width="80%" height="400"></iframe>
+				    	<figcaption>  Used Python packages : Overall </figcaption>
+			    	</div>				
     
                                     <div class="slideshow">
                                         <article>
