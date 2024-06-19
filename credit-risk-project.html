@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Building a Predictor for Credit Default Risk Evaluation</title>
+    <meta charset="utf-8">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {font-family: Arial, sans-serif; margin: 40px;}
+        h2 {color: #333;}
+        ul {list-style-type: none;}
+        li {margin-bottom: 10px;}
+        figure {
+            margin: 20px 0;
+            text-align: center;
+        }
+        figcaption {
+            color: #555;
+            font-style: italic;
+            margin-top: 8px;
+        }
+        .resized-image {
+            width: 100%;   /* or any fixed width, like 500px */
+            max-width: 500px; /* prevents the image from becoming too large */
+            height: auto; /* maintains the aspect ratio */
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Keywords</title>
+    <style>
+        .keywords {
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .keyword {
+            display: inline-block;
+            margin: 5px;
+            padding: 8px 16px;
+            background-color: #ff0;
+            border-radius: 25px; /* Gives the oval shape */
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: adds some depth */
+        }
+    </style>
+    
+</head>
+<body>
+
+<h1>Advanced Machine Learning for Predicting Hospital Readmissions in Diabetes Care</h1>
+
+<div class="keywords">
+    <span class="keyword">Machine Learning</span>
+    <span class="keyword">Random Forest</span>
+	<span class="keyword">XGBoost</span>
+    <span class="keyword">Financial Data</span>
+    <span class="keyword">Risk Modeling</span>
+    <span class="keyword">Incremental Learning</span>
+</div>
+
+	<!-- Table of Contents -->
+<h2>Table of Contents</h2>
+<ul>
+    <li><a href="#motivation">Motivation</a></li>
+    <li><a href="#EDA">Exploratory Data Analysis</a></li>
+    <li><a href="#FE">Feature Engineering</a></li>
+    <li><a href="#Tuning">Hyperparamter Tunning</a></li>
+    <li><a href="#results">Results</a></li>
+    <li><a href="#Challenges">Challenges</a></li>
+    <li><a href="#impact">Impact</a></li>
+</ul>
+	
+<section id="motivation">
+	<h2><u>Motivation</u></h2>
+	<p> For a person who applies to a credit loan, there is a probability for credit default (risk). I train machine learning algorithms to build a probability model to classify if a loan application should be approved or not.		
+	</p>
+</section>
+	
+
+<section id="EDA">
+	<h2><u>Exploratory Data Analysis</u></h2>
+
+        Applied ADASYN (Adaptive Synthetic) algorithm to balance the dataset.
+</section>
+
+
+<section id="FE">
+	<h2><u>Feature Engineering</u></h2>
+
+	We appplied different methods to select important features so it will reduce the computational time, the risk of overfitting and 
+	complexity of interpretation. 
+
+	<ul>
+	    <li> Recursive Feature Elimination (RFE) </li>
+	    <li> \( \chi^2 \) </li>
+	    <li> Univariate Feature Selection : ANOVA F-value </li>
+	    <li> Information Value (IV) and Weight of evidence (WoE) </li>
+	    <li> Correlation </li>
+	    <li> Threshold </li>
+	    <li> Bortua Algorithm </li>
+		
+	</ul>
+	
+
+
+</section>
+
+<section id="Tuning">
+	<h2><u>Hyperparamter Tunning</u></h2>
+ <p> Applied Optuna that utillizes Bayesian optimization algorithm for sampling hyperparamtes </p>
+
+</section>
+
+<section id="results">
+	<h2><u>Results</u></h2>
+	
+
+</section>
+
+<section id="Challenges">
+	<h2><u>#Challenges</u></h2>
+</section>
+	
+<section id="impact">
+	<h2><u>Impact</u></h2>
+
+	The model has a 0.66 ROC-auc score.
+</section>
+
+	
+</body>
+</html>
