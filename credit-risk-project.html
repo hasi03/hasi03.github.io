@@ -52,7 +52,7 @@
 </head>
 <body>
 
-<h1>Advanced Machine Learning for Predicting Hospital Readmissions in Diabetes Care</h1>
+<h1> Building a Predictor for Credit Default Risk Evaluation </h1>
 
 <div class="keywords">
     <span class="keyword">Machine Learning</span>
@@ -85,7 +85,18 @@
 <section id="EDA">
 	<h2><u>Exploratory Data Analysis</u></h2>
 
-        Applied ADASYN (Adaptive Synthetic) algorithm to balance the dataset.
+	I identified some few main issues to be addressed after the initial data analysis.
+
+	<ul>
+	    <li> Having some features  with missing values </li>
+	    <li> Imbalanced class in the target variable  </li>
+	</ul>
+
+	<u>Addressing Missing Values</u>
+	First identified the nature (MCAR or MAR or MNAR) of the missing values with the help of <b>missingno </b> python library.
+	
+	<u>Addressing Imbalanced classes </u>
+        Compared the performances for applying SMOTE and ADASYN (Adaptive Synthetic) algorithm to balance the Target variable.
 </section>
 
 
@@ -123,7 +134,7 @@
 </section>
 
 <section id="Challenges">
-	<h2><u>#Challenges</u></h2>
+	<h2><u>Challenges</u></h2>
 </section>
 	
 <section id="impact">
